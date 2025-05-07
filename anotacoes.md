@@ -16,3 +16,4 @@
 ## Criando e modificando a senha do super usuário Django
 1. Para criar o superuser -> `python manage.py createsuperuser`
 2. Para alterar a senha, caso você esqueça -> `python manage.py changepassword nomedousuario`
+
