@@ -1,21 +1,74 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
+
 <body>
-    <h1>Cadastro de Usuário</h1>
+    <main class="cadastrar-body">
+        <div class="conteudo-esquerdo">
+            <h1>Bem vindo a nossa página de suporte !</h1>
+            <p> cadastre-se para assistir nossos filmes e séries </p>
+            <img src="{% static '/global/assets/images/support-banner-image.jpg'%}" alt="">
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
 
-    <form method="post" enctype="multipart/form-data">
-         {% csrf_token %} 
+            {{ form.as_p }}
+            <button type="">Cadastrar</button>
+        </form>
 
-         {{ form.as_p }}
-        <button type="submit">Cadastrar</button>
-    </form>
+    </main>
+    <style>
+        *{
+            font-family: sans-serif;
 
+        }
+        .cadastrar-body {
+            background-color: rgb(43, 39, 39);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .conteudo-esquerdo{
+            
+        }
+        .conteudo-esquerdo h1{
+            color:aliceblue;
+        }
+        .conteudo-esquerdo p{
+            color:rgba(253, 253, 255, 0.439);
+        }
+        .conteudo-esquerdo img{
+            border: 5px solid rgba(253, 253, 255, 0.439);
+            border-radius: 10px;
 
+        }
+        .cadastrar-body form button{
+            background-color: brown;
+            color: aliceblue;
+            border: 6px;
+
+        }
+        form{
+            color: aliceblue;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+        form p{
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+
+        }
+    </style>
 </body>
+
 </html>
