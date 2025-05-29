@@ -1,3 +1,9 @@
+![image](https://github.com/user-attachments/assets/dbec81e8-0bad-4349-ade5-356fe7231a16)
+
+
+
+
+
 # 🎬✨ movie review ✨🎬
 
 Bem-vindo ao **Movie review**, um aplicativo onde os amantes do cinema podem avaliar e comentar sobre seus filmes favoritos, criando uma comunidade apaixonada pela sétima arte!
